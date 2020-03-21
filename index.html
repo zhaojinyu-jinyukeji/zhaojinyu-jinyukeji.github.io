@@ -749,6 +749,28 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     
     
     <div class="carousel-item amber white-text carousel-post bg-cover"
+            style="background-image: url('/medias/featureimages/10.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">个人主页</div>
+                    <div class="description center-align">
+                    
+                        加油，努力做最好的自己！
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/personal-homepage.html" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover"
             style="background-image: url('/medias/banner/0.jpg');">
         <div class="container">
             <div class="row">
@@ -783,28 +805,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                     </div>
                     <div class="cover-btns">
                         <a href="/love-helps-unite-to-fight-against-epidemic-disease.html" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/medias/featureimages/10.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">个人主页</div>
-                    <div class="description center-align">
-                    
-                        加油，努力做最好的自己！
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/personal-homepage.html" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -933,6 +933,27 @@ $(function () {
     
     
     <div class="col s12" >
+        <div class="post-card" style="background-image: url('/medias/featureimages/10.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/个人主页/" class="category" target="_blank">个人主页</a>
+                    
+                </div>
+                <a href="/personal-homepage.html" target="_blank">
+                    <h3 class="post-title">个人主页</h3>
+                </a>
+                <p class="post-description">加油，努力做最好的自己！</p>
+                <a href="/personal-homepage.html" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
         <div class="post-card" style="background-image: url('/medias/featureimages/16.jpg')">
             <div class="post-body">
                 <div class="post-categories">
@@ -945,7 +966,7 @@ $(function () {
                 </a>
                 <p class="post-description">倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的`blog`网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了。</p>
                 <a href="/blog-open-source.html" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
@@ -966,27 +987,6 @@ $(function () {
                 </a>
                 <p class="post-description">加油，让我们一起抗击疫情！</p>
                 <a href="/love-helps-unite-to-fight-against-epidemic-disease.html" target="_blank"
-                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)">
-                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/10.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                    <a href="/categories/个人主页/" class="category" target="_blank">个人主页</a>
-                    
-                </div>
-                <a href="/personal-homepage.html" target="_blank">
-                    <h3 class="post-title">个人主页</h3>
-                </a>
-                <p class="post-description">加油，努力做最好的自己！</p>
-                <a href="/personal-homepage.html" target="_blank"
                         class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)">
                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                 </a>
@@ -1403,14 +1403,6 @@ $(function () {
 
         <!-- 背景雪花飘落特效洪卫 shw2018 add 2019.09.10 -->
         
-            <script type="text/javascript">
-            //只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-            }
-            </script>
-        
 
         <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
         
@@ -1418,13 +1410,6 @@ $(function () {
         
 
         <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
-        
-            <script type="text/javascript">
-                var windowWidth = $(window).width();
-                if (windowWidth > 768) {
-                    document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
-                }
-            </script>
         
 
         <!-- 在线聊天工具  洪卫 shw2018 add 2019.09.11 -->
